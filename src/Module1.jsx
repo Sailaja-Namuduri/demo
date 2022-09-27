@@ -1,5 +1,5 @@
 export const Module1=()=>{
     return(
-        <div>Module1</div>
+        <div>Module1 </div>
     )
 }
