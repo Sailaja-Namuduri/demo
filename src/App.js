@@ -24,8 +24,8 @@ function App() {
     <div>
       <div id='scrolltop' className="container-fluid" >
         <div className="row" style={{backgroundColor:'green',height:'25px',position:'sticky',top:0}}>
-          <div className="col-1" onClick={fnPanel}> 
-            <img src={lines} height={20} width={20} />
+          <div className="col-1" onClick={fnPanel} style={{position:'relative',display:'inline-block'}}> 
+            <img src={lines} height={20} width={20} style={{position:'absolute'}} />
           </div>
           <div className='col-11 text-center' style={{fontWeight:'bold',fontFamily:'sans-serif',color:'white'}}>
             <span style={{display:'inline-block'}}>Sample Application</span>
