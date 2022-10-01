@@ -24,12 +24,18 @@ function App() {
   return (
     <div>
       <div id='scrolltop' className="container-fluid" >
-        <div className="row" style={{backgroundColor:'green',height:'25px',position:'sticky',top:0}}>
+        <div className="row" style={{backgroundColor:'#E1FFB1',height:'30px',position:'sticky',top:0}}>
           <div className="col-1" onClick={fnPanel} style={{position:'relative',display:'inline-block'}}> 
-            <img src={lines} height={20} width={20} style={{position:'absolute'}} />
+            <img src={lines} height={20} width={20} style={{position:'absolute',paddingTop:'6px'}} />
           </div>
-          <div className='col-11 text-center' style={{fontWeight:'bold',fontFamily:'sans-serif',color:'white'}}>
-            <span style={{display:'inline-block'}}>Sample Application</span>
+          <div className='d-none d-md-block col-1' style={{paddingLeft:0,textAlign:'center'}}>
+            <button style={{borderRadius:5,width:'125px',height:'29px',textAlign:'match-parent'}}>Create</button>
+          </div>
+          <div className='d-sm-block d-md-none col-1' style={{paddingLeft:0,textAlign:'center'}}>
+            <button style={{borderRadius:5,width:'60px',height:'29px',textAlign:'match-parent'}}>Create</button>
+          </div>
+          <div className='col-10 text-center' style={{fontWeight:'bold',fontFamily:'sans-serif',color:'white'}}>
+            <span style={{display:'inline-block',color:'black'}}>Sample Application</span>
           </div>
         </div>
         <GridPage phide={panelhide} modhide={modClick} modhidefun={moduleSelected}/>
