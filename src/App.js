@@ -13,6 +13,7 @@ function App() {
   const[modClick,setModClick]=useState(true);
   const moduleSelected=()=>{
       setModClick(()=>false)
+      setPanelhide(!panelhide)
       
   }
   const fnPanel=()=>{

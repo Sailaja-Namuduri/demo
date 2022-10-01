@@ -17,13 +17,13 @@ export const GridPage=({phide,modhide,modhidefun})=>{
             
             <BrowserRouter>
             
-            <div className="row" style={{height:window.innerHeight-20,border:'10px solid green'}}>
+            <div className="row" style={{height:window.innerHeight-20,border:'0px solid green'}}>
                 {phide?
-                    <div className="d-sm-block d-md-none" style={{display:'inline',position:'absolute',
-                        backgroundColor:'#E1FFB1',zIndex:9,border:'3px solid pink'}}>
+                    <div className="d-sm-block d-md-none col-2" style={{display:'inline',position:'absolute',
+                        backgroundColor:'#E1FFB1',zIndex:9,border:'0px solid pink'}}>
                         {modhide?
-                            <div className="row" style={{border:'1px solid cyan'}}>Main Navigation
-                                <div className="row" onClick={moduleSelected} style={{border:'1px solid cyan'}}> 
+                            <div className="row" style={{border:'0px solid cyan'}}>Mobile Navigation
+                                <div className="row" onClick={moduleSelected} style={{border:'0px solid cyan'}}> 
                                     <Link to='/module1'><div className="col-sm-2" >Module1</div></Link>
                                     <Link to='/module2'><div className="col-sm-2">Module2</div></Link>
                                     <Link to='/module3'><div className="col-sm-2">Module3</div></Link>
@@ -35,9 +35,9 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </div>:''
                         }
                     </div>:
-                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'1px solid #BEBEBE'}}>
-                        <div className="row" style={{border:'1px solid blue'}}>Main Navigation</div>
-                        <div className="row" style={{border:'1px solid yellow'}}> 
+                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #BEBEBE'}}>
+                        <div className="row" style={{border:'0px solid blue'}}>Desktop Navigation</div>
+                        <div className="row" style={{border:'0px solid yellow'}}> 
                             <Link to='/module1'><div className="col-sm-10 col-md-10 col-lg-10">Module1</div></Link>
                             <Link to='/module2'><div className="col-sm-10 col-md-10 col-lg-10">Module2</div></Link>
                             <Link to='/module3'><div className="col-sm-10 col-md-10 col-lg-10">Module3</div></Link>
@@ -49,11 +49,18 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                     </div>
                 }
                 {phide?
-                    <div className="row"style={{border:'1px solid brown'}}>
-                        <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center" style={{borderRight:'1px solid #BEBEBE',padding:'10px',border:'1px solid black'}}>
-                            <HidePanelShortcuts/>
+                    
+                    <div className="row"style={{border:'5px solid brown'}}>
+                        
+                        <div className="d-none d-md-block col-md-1 col-lg-1 text-center" style={{borderRight:'1px solid #BEBEBE',padding:'10px',border:'4px solid black'}}>
+                            <div className="row">
+                                <div className="col-1 d-none d-md-block" style={{border:'3px dashed cyan'}}>
+                                    <HidePanelShortcuts/>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',border:'1px solid red'}}>
+                        
+                        <div className="col-xs-11 col-sm-11 col-md-11 col-lg-11 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',border:'4px dashed red'}}>
                             <Routes>
                                 <Route path='/module1' element={<Module1/>}/>
                                 <Route path='/module2' element={<Module2/>}/>
@@ -65,7 +72,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </Routes>
                         </div>
                     </div>:
-                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',border:'1px solid green'}}>
+                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',border:'5px solid green'}}>
                         <Routes>
                             <Route path='/module1' element={<Module1/>}/>
                             <Route path='/module2' element={<Module2/>}/>
