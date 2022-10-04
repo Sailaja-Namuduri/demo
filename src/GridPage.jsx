@@ -37,10 +37,10 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </div>:''
                         }
                     </div>:
-                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'1px solid red'}}>
-                        <div className="row" style={{border:'1px dashed #0bf32687'}}>
+                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid red'}}>
+                        <div className="row" style={{border:'0px dashed #0bf32687'}}>
                             <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #8f5d5d',position:'fixed',top:30,left:0}}>
-                                <div className="row" style={{border:'1px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
+                                <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
                                     <div className="row" style={{border:'0px solid yellow'}}> 
                                         <NavButton><Link to='/module1' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Pending</div></Link></NavButton>
                                         <NavButton><Link to='/module2' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Completed</div></Link></NavButton>
@@ -59,7 +59,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                     
                     <div className="d-block col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div className="row">
-                            <div className="d-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'2px solid #1477da'}}>
+                            <div className="d-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #1477da'}}>
                                 <HidePanelShortcuts/>
                             </div>
                             <div className="d-block col-xs-2 col-sm-2 col-md-10 col-lg-10" style={{border:'0px solid #b235d5'}}>
