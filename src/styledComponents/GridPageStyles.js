@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const NavMobLink=styled(Link)`
+export const NavLink=styled(Link)`
 text-decoration:none;color:black;font-size:13px;font-weight:bold;
 `;
 
@@ -12,6 +12,10 @@ display: inline-block;
 white-space: nowrap;
 `;
 
-export const NavdeskLink=styled(Link)`
-    text-decoration:none;color:black;font-weight: bold;
-`;
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@ import { Module5 } from "./Module5"
 import { Module6 } from "./Module6"
 import { Module7 } from "./Module7"
 import { HidePanelShortcuts } from "./reusable_components/hidePanelShortcuts"
-import { NavButton, NavMobLink } from "./styledComponents/GridPageStyles"
+import { NavButton, NavLink } from "./styledComponents/GridPageStyles"
 
 
 export const GridPage=({phide,modhide,modhidefun})=>{
@@ -26,13 +26,13 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                         {modhide?
                             <div className="row" style={{border:'0px solid cyan',backgroundColor:'#E1FFB1',position:'fixed',top:30}}>Mobile Navigation
                                 <div className="row" onClick={moduleSelected} style={{border:'0px solid cyan'}}> 
-                                    <NavButton><NavMobLink to='/module1'><div className="col-sm-2">Pending</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module2'><div className="col-sm-2">Completed</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module3'><div className="col-sm-2">Cancelled</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module4'><div className="col-sm-2">Search by supplier</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module5'><div className="col-sm-2">Search by E-id</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module6'><div className="col-sm-2">Module6</div></NavMobLink></NavButton>
-                                    <NavButton><NavMobLink to='/module7'><div className="col-sm-2">Module7</div></NavMobLink></NavButton>
+                                    <NavButton><NavLink to='/module1'><div className="col-sm-2">Pending</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module2'><div className="col-sm-2">Completed</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module3'><div className="col-sm-2">Cancelled</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module4'><div className="col-sm-2">Search by supplier</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module5'><div className="col-sm-2">Search by E-id</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module6'><div className="col-sm-2">Module6</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module7'><div className="col-sm-2">Module7</div></NavLink></NavButton>
                                 </div>
                             </div>:''
                         }
@@ -45,13 +45,13 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                         <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1"><HidePanelShortcuts/></div>
                                         <div className="d-none d-md-block col-xs-10 col-sm-10 col-md-10 col-lg-10">
                                         
-                                            <div><NavButton><Link to='/module1' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Pending</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module2' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Completed</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module3' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Cancelled</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module4' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by supplier</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module5' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by employer id</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module6' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Module6</div></Link></NavButton></div>
-                                            <div><NavButton><Link to='/module7' style={{textDecoration:'none',color:'black',fontWeight:'bold',fontSize:'13px'}}><div className="col-sm-10 col-md-10 col-lg-10">Module7</div></Link></NavButton></div>
+                                            <div><NavButton><NavLink to='/module1' ><div className="col-sm-10 col-md-10 col-lg-10">Pending</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module2' ><div className="col-sm-10 col-md-10 col-lg-10">Completed</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module3' ><div className="col-sm-10 col-md-10 col-lg-10">Cancelled</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Search by supplier</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Search by employer id</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Module6</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module7' ><div className="col-sm-10 col-md-10 col-lg-10">Module7</div></NavLink></NavButton></div>
                                         </div>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                     <div className="d-block col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div className="row">
                             <div className="d-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #1477da',position:'fixed',top:30,left:0}}>
-                                <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Links:
+                                <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
                                     <div className="row" style={{border:'0px solid yellow'}}>
                                     <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1"><HidePanelShortcuts/></div>
                                     </div>
