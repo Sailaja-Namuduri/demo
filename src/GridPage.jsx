@@ -37,16 +37,18 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </div>:''
                         }
                     </div>:
-                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #BEBEBE'}}>
-                        <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1'}}>Desktop Navigation:
-                            <div className="row" style={{border:'0px solid yellow'}}> 
-                                <NavButton><Link to='/module1' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Pending</div></Link></NavButton>
-                                <NavButton><Link to='/module2' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Completed</div></Link></NavButton>
-                                <NavButton><Link to='/module3' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Cancelled</div></Link></NavButton>
-                                <NavButton><Link to='/module4' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by supplier</div></Link></NavButton>
-                                <NavButton><Link to='/module5' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by employer id</div></Link></NavButton>
-                                <NavButton><Link to='/module6' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Module6</div></Link></NavButton>
-                                <NavButton><Link to='/module7' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Module7</div></Link></NavButton>
+                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #8f5d5d',position:'fixed',top:30,left:-12}}>
+                            <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
+                                <div className="row" style={{border:'0px solid yellow'}}> 
+                                    <NavButton><Link to='/module1' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Pending</div></Link></NavButton>
+                                    <NavButton><Link to='/module2' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Completed</div></Link></NavButton>
+                                    <NavButton><Link to='/module3' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Cancelled</div></Link></NavButton>
+                                    <NavButton><Link to='/module4' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by supplier</div></Link></NavButton>
+                                    <NavButton><Link to='/module5' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Search by employer id</div></Link></NavButton>
+                                    <NavButton><Link to='/module6' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Module6</div></Link></NavButton>
+                                    <NavButton><Link to='/module7' style={{textDecoration:'none',color:'black',fontWeight:'bold'}}><div className="col-sm-10 col-md-10 col-lg-10">Module7</div></Link></NavButton>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,7 +77,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </Routes>
                         </div>
                     </div>:
-                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',borderLeft:'5px solid green',borderRight:'5px solid green',borderBottom:'5px solid green'}}>
+                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'1px solid #BEBEBE',padding:'10px',borderLeft:'0px solid green',borderRight:'0px solid green',borderBottom:'0px solid green'}}>
                         <Routes>
                             <Route path='/module1' element={<Module1/>}/>
                             <Route path='/module2' element={<Module2/>}/>
@@ -86,6 +88,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             <Route path='/module7' element={<Module7/>}/>
                         </Routes>
                     </div>
+                    
                 }
                 
             </div>
