@@ -11,7 +11,5 @@ text-align:left;
 `;
 
 export const NavdeskLink=styled(Link)`
-    text-decoration:none;
-    color:black;
-    font-weight: bold;
+    text-decoration:none;color:black;font-weight: bold;
 `;

@@ -8,7 +8,7 @@ import seven from '../Images/7.png';
 
 export const HidePanelShortcuts=()=>{
     return(
-        <div className="row" style={{border:'2px dashed orange'}}>
+        <div className="row" style={{border:'0px dashed orange'}}>
             <div className="col-sm-12 col-md-12 col-lg-12"><img src={one} width={15} height={15}/></div>
             <div className="col-sm-12 col-md-12 col-lg-12"><img src={two} width={15} height={15}/></div>
             <div className="col-sm-12 col-md-12 col-lg-12"><img src={three} width={15} height={15}/></div>
