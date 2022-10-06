@@ -18,9 +18,21 @@ export const Module1=()=>{
         setChecked(()=>!checked)
     }
     return(
-        <div>
-            <div style={{padding:'10px'}}><span style={{padding:'10px'}}>First Name:</span><input/></div>
-            <div><span style={{padding:'10px'}}>Last Name:</span><input/></div>
+        <div className='row'style={{border:'1px solid red'}}>
+            <div className='row' style={{padding:'10px'}}>
+                <div className='d-none d-sm-none d-md-block col-md-6 col-lg-6'>
+                    <span >First Name:</span><input/>
+                </div>
+                <div className='d none d-sm-none d-md-block col-md-6 col-lg-6'>
+                    <span >Last Name:</span><input/>
+                </div>
+                <div className='d-none d-sm-block d-md-none col-md-6 col-lg-6'>
+                    <span >First Name:</span><input/>
+                </div>
+                <div className='d none d-sm-block d-md-none col-md-6 col-lg-6'>
+                    <span >Last Name:</span><input/>
+                </div>
+            </div>
             <div style={{padding:'10px'}}><span>Gender:</span>
                 <DropdownButton
                     id="dropdown-basic-button"

@@ -19,7 +19,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
             
             <BrowserRouter>
             
-            <div className="row" style={{height:window.innerHeight-20,border:'0px solid green'}}>
+            <div className="row" style={{height:'100%',border:'0px solid pink'}}>
                 {phide?
                     <div className="d-sm-block d-md-none col-5" style={{display:'inline',position:'absolute',
                         backgroundColor:'#E1FFB1',zIndex:9,border:'0px solid pink'}}>
@@ -37,9 +37,9 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </div>:''
                         }
                     </div>:
-                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid red'}}>
-                        <div className="row" style={{border:'0px dashed #0bf32687'}}>
-                            <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #8f5d5d',position:'fixed',top:30,left:0}}>
+                    <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #c4311a'}}>
+                        <div className="row" style={{border:'0px dashed #fdgfdf'}}>
+                            <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #8f5d5d',position:'fixed',top:30,left:0,bottom:0}}>
                                 <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
                                     <div className="row" style={{border:'0px solid yellow'}}>
                                         <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1"><HidePanelShortcuts/></div>
@@ -62,7 +62,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                 {phide?
                     
                     <div className="d-block col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div className="row">
+                        <div className="row" >
                             <div className="d-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #1477da'}}>
                                 <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
                                     <div className="row" style={{border:'0px solid yellow'}}>
@@ -71,7 +71,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                 </div>
                             </div>
                         
-                            <div className="d-block col-xs-10 col-sm-10 col-md-10 col-lg-10" style={{border:'0px solid #b235d5'}}>
+                            <div className="d-block col-xs-10 col-sm-10 col-md-10 col-lg-10" style={{border:'0px solid #1d0b22'}}>
                                 <div className="row">
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style={{border:'0px dashed red'}}>
                                         <Routes>
@@ -88,7 +88,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             </div>
                         </div>
                     </div>:
-                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{borderLeft:'0px solid green',borderRight:'0px solid green',borderBottom:'0px solid green'}}>
+                    <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" style={{border:'0px solid green'}}>
                         <Routes>
                             <Route path='/module1' element={<Module1/>}/>
                             <Route path='/module2' element={<Module2/>}/>
