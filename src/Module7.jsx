@@ -2,6 +2,7 @@ export const Module7=()=>{
     return(
         <div>
             <div>start</div>
+            <input/><input/><input/><input/><input/><input/><input/><input/>
             <div>Module7</div>
             <div>Module7</div>
             <div>Module7</div>
@@ -36,6 +37,32 @@ export const Module7=()=>{
             <div>Module7</div>
             <div>Module7</div>
             <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
+            <div>Module7</div>
 <div>Module7</div>
 <div>Module7</div>
 <div>Module7</div>
@@ -51,41 +78,9 @@ export const Module7=()=>{
 <div>Module7</div>
 <div>Module7</div>
 <div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>stop</div>
 
-        </div>
+<div>stop</div>
+</div>
         
     )
 }
