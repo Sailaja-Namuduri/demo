@@ -2,83 +2,57 @@ export const Module7=()=>{
     return(
         <div>
             <div>start</div>
-            <input/><input/><input/><input/><input/><input/><input/><input/>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-            <div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-<div>Module7</div>
-
+            
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div><div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div><div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div><div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div><div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div><div>Hello</div>
+            <div>Hello</div>
+            <div>Hello</div>
 <div>stop</div>
 </div>
         
