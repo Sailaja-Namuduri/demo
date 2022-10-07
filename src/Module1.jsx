@@ -23,13 +23,13 @@ export const Module1=()=>{
                 <div className='d-none d-sm-none d-md-block col-md-6 col-lg-6'>
                     <span >First Name:</span><input/>
                 </div>
-                <div className='d none d-sm-none d-md-block col-md-6 col-lg-6'>
+                <div className='d-none d-sm-none d-md-block col-md-6 col-lg-6'>
                     <span >Last Name:</span><input/>
                 </div>
-                <div className='d-none d-sm-block d-md-none col-md-6 col-lg-6'>
+                <div className='d-block d-sm-block d-md-none col-sm-12 col-md-6 col-lg-6'>
                     <span >First Name:</span><input/>
                 </div>
-                <div className='d none d-sm-block d-md-none col-md-6 col-lg-6'>
+                <div className='d-block d-sm-block d-md-none col-sm-12 col-md-6 col-lg-6'>
                     <span >Last Name:</span><input/>
                 </div>
             </div>
@@ -39,7 +39,7 @@ export const Module1=()=>{
                     variant="outline-success"
                     className="floatRight"
                     onSelect={handleSelect}
-                    title={selected?.key || list[0].key}
+                    title={selected?.key || 'Gender Select'}
                     style={{display:'inline'}}
                 >
                 {list.map((item, index) => {
@@ -51,7 +51,7 @@ export const Module1=()=>{
                 })}
                 </DropdownButton>
             </div>
-            <input type='checkbox' label='cricket'value='Cricket'/>
+            <div><span>Valid Member:</span><input type='checkbox' label='cricket'value='Cricket' height={40} width={40}/></div>
         </div>
     )
 }
