@@ -33,48 +33,48 @@ export const Module1=()=>{
         console.log('sending request.....',datacardDetails);
     }
     return(
-        <div className='row'style={{border:'1px solid red'}}>
-            <div className='row' style={{padding:'10px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <div className='row'style={{border:'0px solid red'}}>
+            <div className='row p-3' >
                 <div className='d-none d-sm-none d-md-block col-md-12 col-lg-12' >
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-end'><span >DataCard Image:</span></div>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-start'><input ref={n1Ref} multiple accept="image/*"/></div>
                     </div>
                 </div>
                 <div className='d-none d-sm-none d-md-block col-md-12 col-lg-12'>
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-end'><span >DataCard Title:</span></div>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-start'><input ref={n2Ref}/></div>
                     </div>
                 </div>
                 <div className='d-none d-sm-none d-md-block col-md-12 col-lg-12'>
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-end'><span >DataCard Desciption:</span></div>
                         <div className='d-none d-md-block col-md-6 col-lg-6 text-start'><input ref={n3Ref}/></div>
                     </div>
                 </div>
-                <div className='d-none d-sm-none d-md-block col-md-12 col-lg-12 text-center'>
+                <div className='d-none d-sm-none d-md-block col-md-12 col-lg-12 text-center p-3'>
                     <input type='submit' onClick={fnDatacardSubmit}/>
                 </div>
                 <div className='d-sm-block d-md-none col-sm-12'>
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><span >DataCard Image:</span></div>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><input ref={n1Ref} multiple accept="image/*"/></div>
                     </div>
                 </div>
                 <div className='d-sm-block d-md-none col-sm-12'>
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><span >DataCard Title:</span></div>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><input ref={n2Ref}/></div>
                     </div>
                 </div>
                 <div className='d-sm-block d-md-none col-sm-12'>
-                    <div className='row'>
+                    <div className='row p-2'>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><span >DataCard Desciption:</span></div>
                         <div className='d-sm-block d-md-none col-sm-12 text-center'><input ref={n3Ref}/></div>
                     </div>
                 </div>
-                <div className='d-sm-block d-md-none col-sm-12 text-center'>
+                <div className='d-sm-block d-md-none col-sm-12 text-center p-3'>
                     <input type='submit' onClick={fnDatacardSubmit}/>
                 </div>
             </div>
