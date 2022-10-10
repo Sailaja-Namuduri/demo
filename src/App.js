@@ -2,8 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { GridPage } from './GridPage';
 import lines from './Images/button.png';
-import { useState } from 'react';
+import { useReducer, useState } from 'react';
 import styled from 'styled-components';
+import myReducer from './reducers/myReducer';
+import { init } from './utils/init';
 
 const SpanAppName1=styled.span`
 display:inline-block;
@@ -15,6 +17,8 @@ var stylingObject={
 }
 
 function App() {
+  
+
   const [panelhide,setPanelhide]=useState(false);
   const[modClick,setModClick]=useState(true);
   const moduleSelected=()=>{
