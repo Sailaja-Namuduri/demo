@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
+import { Ajax } from "./Ajax"
 import { Module1 } from "./Module1"
 import { Module2 } from "./Module2"
 import { Module3 } from "./Module3"
@@ -77,7 +78,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                         <Routes>
                                             <Route path='/create-datacard' element={<Module1/>}/>
                                             <Route path='/datacard-list' element={<Module2/>}/>
-                                            <Route path='/module3' element={<Module3/>}/>
+                                            <Route path='/module3' element={<Ajax/>}/>
                                             <Route path='/module4' element={<Module4/>}/>
                                             <Route path='/module5' element={<Module5/>}/>
                                             <Route path='/module6' element={<Module6/>}/>
@@ -92,7 +93,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                         <Routes>
                             <Route path='/create-datacard' element={<Module1/>}/>
                             <Route path='/datacard-list' element={<Module2/>}/>
-                            <Route path='/module3' element={<Module3/>}/>
+                            <Route path='/module3' element={<Ajax/>}/>
                             <Route path='/module4' element={<Module4/>}/>
                             <Route path='/module5' element={<Module5/>}/>
                             <Route path='/module6' element={<Module6/>}/>
