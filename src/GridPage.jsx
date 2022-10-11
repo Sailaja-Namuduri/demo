@@ -29,10 +29,10 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                 <div className="row" onClick={moduleSelected} style={{border:'0px solid cyan'}}> 
                                     <NavButton><NavLink to='/create-datacard'><div className="col-sm-2">Create Datacard</div></NavLink></NavButton>
                                     <NavButton><NavLink to='/datacard-list'><div className="col-sm-2">Datacard List</div></NavLink></NavButton>
-                                    <NavButton><NavLink to='/module3'><div className="col-sm-2">Cancelled</div></NavLink></NavButton>
-                                    <NavButton><NavLink to='/module4'><div className="col-sm-2">Search by supplier</div></NavLink></NavButton>
-                                    <NavButton><NavLink to='/module5'><div className="col-sm-2">Search by E-id</div></NavLink></NavButton>
-                                    <NavButton><NavLink to='/module6'><div className="col-sm-2">Module6</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/api-calls-examples'><div className="col-sm-2">Example Api Calls</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module4'><div className="col-sm-2">Processing...</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module5'><div className="col-sm-2">Processing...</div></NavLink></NavButton>
+                                    <NavButton><NavLink to='/module6'><div className="col-sm-2">Processing...</div></NavLink></NavButton>
                                     <NavButton><NavLink to='/game'><div className="col-sm-2">Game</div></NavLink></NavButton>
                                 </div>
                             </div>:''
@@ -48,10 +48,10 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                         
                                             <div><NavButton><NavLink to='/create-datacard' ><div className="col-sm-10 col-md-10 col-lg-10">Create Datacard</div></NavLink></NavButton></div>
                                             <div><NavButton><NavLink to='/datacard-list' ><div className="col-sm-10 col-md-10 col-lg-10">Datacard List</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module3' ><div className="col-sm-10 col-md-10 col-lg-10">Cancelled</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Search by supplier</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Search by employer id</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Module6</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/api-calls-examples' ><div className="col-sm-10 col-md-10 col-lg-10">Example Api Calls</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                            <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
                                             <div><NavButton><NavLink to='/game' ><div className="col-sm-10 col-md-10 col-lg-10">Game</div></NavLink></NavButton></div>
                                         </div>
                                     </div>
@@ -78,7 +78,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                                         <Routes>
                                             <Route path='/create-datacard' element={<Module1/>}/>
                                             <Route path='/datacard-list' element={<Module2/>}/>
-                                            <Route path='/module3' element={<Ajax/>}/>
+                                            <Route path='/api-calls-examples' element={<Ajax/>}/>
                                             <Route path='/module4' element={<Module4/>}/>
                                             <Route path='/module5' element={<Module5/>}/>
                                             <Route path='/module6' element={<Module6/>}/>
@@ -93,7 +93,7 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                         <Routes>
                             <Route path='/create-datacard' element={<Module1/>}/>
                             <Route path='/datacard-list' element={<Module2/>}/>
-                            <Route path='/module3' element={<Ajax/>}/>
+                            <Route path='/api-calls-examples' element={<Ajax/>}/>
                             <Route path='/module4' element={<Module4/>}/>
                             <Route path='/module5' element={<Module5/>}/>
                             <Route path='/module6' element={<Module6/>}/>
