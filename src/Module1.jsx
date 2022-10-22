@@ -40,6 +40,7 @@ export const Module1=()=>{
         }
     ];
     
+    
     const [datacardDetails,setdatacardDetails]=useState({dimg:'',dtitle:'',d_description:''});
     const fnChange=(eve)=>{
         const {value,name}=eve.target
