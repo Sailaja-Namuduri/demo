@@ -21,6 +21,8 @@ function App() {
 
   const [panelhide,setPanelhide]=useState(false);
   const[modClick,setModClick]=useState(true);
+  const [leftMain,setLeftMain]=useState(0);
+  const [positionMain,setPositionMain]=useState('sticky');
   const moduleSelected=()=>{
       setModClick(()=>false)
       setPanelhide(!panelhide)
@@ -48,7 +50,7 @@ function App() {
             <SpanAppName1>Sample Application</SpanAppName1>
           </div>
         </div>
-        <GridPage phide={panelhide} modhide={modClick} modhidefun={moduleSelected}/>
+        <GridPage phide={panelhide} modhide={modClick} modhidefun={moduleSelected} />
 
       </div>
       <div style={{fontWeight:'bold',color:'burlywood',position:'fixed',bottom:0,cursor:'pointer',scrollBehavior:'smooth'}}><a href='#scrolltop'>Scroll Top <span style={{fontSize:'50px'}}>&#8593;</span></a></div>
