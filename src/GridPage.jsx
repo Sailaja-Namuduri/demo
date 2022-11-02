@@ -11,10 +11,18 @@ import { Module7 } from "./Module7"
 import { HidePanelShortcuts } from "./reusable_components/hidePanelShortcuts"
 import { NavButton, NavLink } from "./styledComponents/GridPageStyles"
 
-
 export const GridPage=({phide,modhide,modhidefun})=>{
+    const [mainhide,setMainHide]=useState(false);
         const moduleSelected=()=>{
             modhidefun();
+        }
+        const fnDeskDisplayhiddenMenu=()=>{
+            document.getElementById('menuhidden').style.zIndex=0;
+            setMainHide(true);
+        }
+        const fnDeskDisplayhiddenMenu_Enable=()=>{
+            document.getElementById('menu_hidden').style.zIndex=-1;
+            setMainHide(false);
         }
         return(
             
@@ -42,19 +50,34 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                         <div className="row" style={{border:'0px dashed #fdgfdf'}}>
                             <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #8f5d5d',position:'fixed',top:30,left:0,bottom:0}}>
                                 <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
-                                    <div className="row" style={{border:'0px solid yellow'}}>
-                                        <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1"><HidePanelShortcuts/></div>
-                                        <div className="d-none d-md-block col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                                        
-                                            <div><NavButton><NavLink to='/create-datacard' ><div className="col-sm-10 col-md-10 col-lg-10">Create Datacard</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/datacard-list' ><div className="col-sm-10 col-md-10 col-lg-10">Datacard List</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/api-calls-examples' ><div className="col-sm-10 col-md-10 col-lg-10">Example Api Calls</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
-                                            <div><NavButton><NavLink to='/game' ><div className="col-sm-10 col-md-10 col-lg-10">Game</div></NavLink></NavButton></div>
+                                    {mainhide?
+                                        <div className="row" style={{border:'0px solid yellow'}}>
+                                            <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1" onMouseOver={fnDeskDisplayhiddenMenu_Enable}><HidePanelShortcuts/></div>
+                                            <div className="d-none d-md-block col-xs-10 col-sm-10 col-md-10 col-lg-10" id='menu_hidden' style={{zIndex:-1}}>
+                                                <div><NavButton><NavLink to='/create-datacard' ><div className="col-sm-10 col-md-10 col-lg-10">Create Datacard</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/datacard-list' ><div className="col-sm-10 col-md-10 col-lg-10">Datacard List</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/api-calls-examples' ><div className="col-sm-10 col-md-10 col-lg-10">Example Api Calls</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/game' ><div className="col-sm-10 col-md-10 col-lg-10">Game</div></NavLink></NavButton></div>
+                                            </div>
+                                            
+                                        </div>:
+                                        <div className="row" style={{border:'0px solid yellow'}}>
+                                            <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1" ><HidePanelShortcuts/></div>
+                                            <div className="d-none d-md-block col-xs-10 col-sm-10 col-md-10 col-lg-10" id='menu_hidden' style={{zIndex:0}}>
+                                                <div><NavButton><NavLink to='/create-datacard' ><div className="col-sm-10 col-md-10 col-lg-10">Create Datacard</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/datacard-list' ><div className="col-sm-10 col-md-10 col-lg-10">Datacard List</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/api-calls-examples' ><div className="col-sm-10 col-md-10 col-lg-10">Example Api Calls</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10">Processing...</div></NavLink></NavButton></div>
+                                                <div><NavButton><NavLink to='/game' ><div className="col-sm-10 col-md-10 col-lg-10">Game</div></NavLink></NavButton></div>
+                                            </div>    
                                         </div>
-                                    </div>
+                                        }
+                                    
                                 </div>
                             </div>
                         </div>
@@ -67,7 +90,16 @@ export const GridPage=({phide,modhide,modhidefun})=>{
                             <div className="d-none d-md-block col-xs-2 col-sm-2 col-md-2 col-lg-2" style={{border:'0px solid #1477da'}}>
                                 <div className="row" style={{border:'0px solid blue',backgroundColor:'#E1FFB1',paddingLeft:'25px'}}>Desktop Navigation:
                                     <div className="row" style={{border:'0px solid yellow'}}>
-                                    <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1"><HidePanelShortcuts/></div>
+                                        <div className="d-none d-md-block col-xs-1 col-sm-1 col-md-1 col-lg-1" onMouseOver={fnDeskDisplayhiddenMenu} ><HidePanelShortcuts/></div>
+                                        <div className="d-none d-md-block col-xs-10 col-sm-10 col-md-10 col-lg-10" id='menuhidden'  style={{zIndex:-1}} >
+                                            <div ><NavButton ><NavLink to='/create-datacard'  ><div className="col-sm-10 col-md-10 col-lg-10" >Create Datacard</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/datacard-list' ><div className="col-sm-10 col-md-10 col-lg-10" >Datacard List</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/api-calls-examples' ><div className="col-sm-10 col-md-10 col-lg-10" >Example Api Calls</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/module4' ><div className="col-sm-10 col-md-10 col-lg-10" >Processing...</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/module5' ><div className="col-sm-10 col-md-10 col-lg-10" >Processing...</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/module6' ><div className="col-sm-10 col-md-10 col-lg-10" >Processing...</div></NavLink></NavButton></div>
+                                            <div ><NavButton ><NavLink to='/game' ><div className="col-sm-10 col-md-10 col-lg-10" >Game</div></NavLink></NavButton></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
